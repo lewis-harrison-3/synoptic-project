@@ -1,3 +1,13 @@
+# Instructions
+
+You will need to download NodeJS in order to run this application.
+
+Download this directory and access it in the cmd line.
+
+Use the command npm install to install the application.
+
+npm start as described below to run the application.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
