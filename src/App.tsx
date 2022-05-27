@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CreateQuiz from "./component/createQuiz/CreateQuiz";
+import ViewQuiz from "./component/viewQuiz/ViewQuiz";
+import { Routes, Route } from "react-router-dom";
+// create quiz grid component
+// create account grid component
+// content varies depending on input
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<CreateQuiz />} />
+        <Route path="/viewQuiz" element={<ViewQuiz quizId={1} />} />
+      </Routes>
     </div>
   );
 }
